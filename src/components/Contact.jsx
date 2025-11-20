@@ -41,28 +41,28 @@ export default function Contact() {
           <motion.h2 initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-3xl sm:text-4xl font-bold text-white">
             Speak with an examiner
           </motion.h2>
-          <p className="mt-3 text-slate-300">Tell us a little about your case and preferred service. We respond within 1 business day.</p>
+          <p className="mt-3 text-[#F3F0E8]/80">Tell us a little about your case and preferred service. We respond within 1 business day.</p>
         </div>
 
-        <form onSubmit={handleSubmit} className="p-6 rounded-2xl border border-white/10 bg-slate-900/60 space-y-4">
+        <form onSubmit={handleSubmit} className="p-6 rounded-2xl border border-[#F3F0E8]/10 bg-[#1E1E1E]/70 space-y-4">
           <div className="grid sm:grid-cols-2 gap-4">
-            <input name="name" required placeholder="Full name" className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400/40" />
-            <input name="email" type="email" required placeholder="Email" className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400/40" />
+            <input name="name" required placeholder="Full name" className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-[#F3F0E8]/60 focus:outline-none focus:ring-2 focus:ring-[#D4A900]/40" />
+            <input name="email" type="email" required placeholder="Email" className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-[#F3F0E8]/60 focus:outline-none focus:ring-2 focus:ring-[#D4A900]/40" />
           </div>
 
-          <select name="service" className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-emerald-400/40">
+          <select name="service" className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-[#D4A900]/40">
             <option value="Polygraph">Polygraph</option>
             <option value="Background Intelligence">Background Intelligence</option>
             <option value="Forensic Analysis">Forensic Analysis</option>
           </select>
 
-          <textarea name="message" rows="4" placeholder="Tell us about your needs" className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400/40"></textarea>
+          <textarea name="message" rows="4" placeholder="Tell us about your needs" className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-[#F3F0E8]/60 focus:outline-none focus:ring-2 focus:ring-[#D4A900]/40"></textarea>
 
-          <button type="submit" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400 transition-colors">
+          <button type="submit" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#D4A900] text-[#1E1E1E] font-semibold hover:brightness-110 transition-colors">
             <Send size={18} /> Send inquiry
           </button>
 
-          {status && <p className="text-sm text-emerald-300">{status}</p>}
+          {status && <p className="text-sm text-[#D4A900]">{status}</p>}
         </form>
       </div>
     </section>

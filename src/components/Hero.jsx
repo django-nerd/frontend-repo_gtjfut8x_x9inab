@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-[92vh] pt-28 overflow-hidden">
       {/* Background gradient glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_0%,rgba(16,185,129,0.25),transparent)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_0%,rgba(212,169,0,0.25),transparent)]" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 grid lg:grid-cols-2 gap-10 items-center">
         <div className="py-6">
@@ -13,7 +13,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-400/30 bg-emerald-500/10 text-emerald-300 text-xs"
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#D4A900]/30 bg-[#D4A900]/10 text-[#D4A900] text-xs"
           >
             Trusted corporate-grade security intelligence
           </motion.div>
@@ -31,7 +31,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.7 }}
-            className="mt-5 text-slate-300 text-lg leading-relaxed"
+            className="mt-5 text-[#F3F0E8]/80 text-lg leading-relaxed"
           >
             We help enterprises verify truth, detect fraud, and safeguard operations with discrete, science-backed assessments and modern investigative workflows.
           </motion.p>
@@ -42,7 +42,7 @@ export default function Hero() {
             transition={{ delay: 0.3, duration: 0.7 }}
             className="mt-8 flex flex-col sm:flex-row gap-3"
           >
-            <a href="#contact" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400 transition-colors">
+            <a href="#contact" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#D4A900] text-[#1E1E1E] font-semibold hover:brightness-110 transition-colors">
               Book a Polygraph
             </a>
             <a href="#services" className="inline-flex items-center justify-center px-6 py-3 rounded-xl border border-white/10 text-white hover:bg-white/5 transition-colors">
